@@ -6,16 +6,18 @@ var port = process.env.PORT || 3000;
 app.set('view engine','hbs');
 
 
-// app.use( (request, response, next) =>
-// {
-//
-// //	response.render('maintenance.hbs');
-// 	console.log('Hi');
-// 	next();
-// });
+app.get(('/') (request, response ) =>
+{
+
+	response.render('maintenance.hbs');
+
+});
 
 
 ///*
+
+
+
 app.get('/info',(req,resp)=>
 {
 	resp.render('info.hbs',
