@@ -6,7 +6,7 @@ var port = process.env.PORT || 3000;
 app.set('view engine','hbs');
 
 
-app.get(('/') (request, response ) =>
+app.get('/', (request, response ) =>
 {
 
 	response.render('maintenance.hbs');
